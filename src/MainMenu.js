@@ -16,8 +16,8 @@ class MainMenu extends Phaser.Scene {
 
         this.input.keyboard.on('keydown', this.handleKey, this);
 
-        this.tweens.add({targets: title, angle: title.angle-2, duration: 1000, ease: 'Sine.easeInOut' });
-        this.tweens.add({targets: title, angle: title.angle+4, duration: 2000, ease: 'Sine.easeInOut', yoyo: 1, loop: -1, delay: 1000 });
+        this.tweens.add({targets: title, angle: title.angle-12, duration: 600, ease: 'Sine.inOut' });
+        this.tweens.add({targets: title, angle: title.angle+14, duration: 1200, ease: 'Sine.inOut', yoyo: true, repeat: -1, delay: 600 });
 
         this.buttonSettings = new Button(20, 20, 'button-settings', this.clickSettings, this);
         this.buttonSettings.setOrigin(0, 0);
